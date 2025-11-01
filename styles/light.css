@@ -3,10 +3,34 @@
   Здесь окажутся стили, которые нужно переопределить принудительно,
   переключая тему
 */
+@media (prefers-color-scheme: light) {
+  :root {
+    --decor-background: #FF8DCB;
+    --background-color: #FFF1F7;
+    --background-image: url(../images/cover-image-light.png);
+    --main-color: #353430;
+    --main-color-light: #32312D66;
+    --secondary-color: #353430;
+    --article-color: #353430;
+    --logo-color: #FFC2E6;
+    --logo-shadow-color: #FF8DCB;
+    --header-rec-visibility: hidden;
+  }
+}
 
 :root.theme-light {
   /* сохраните этот селектор в приведённом виде.
     Так стили написанные ниже будут иметь больший вес,
     чем стили в медиазапросе предпочтений пользователя
   */
+  --decor-background: #FF8DCB;
+  --background-color: #FFF1F7;
+  --background-image: url(../images/cover-image-light.png);
+  --main-color: #353430;
+  --main-color-light: #32312D66;
+  --secondary-color: #353430;
+  --article-color: #353430;
+  --logo-color: #FFC2E6;
+  --logo-shadow-color: #FF8DCB;
+  --header-rec-visibility: hidden;
 }
